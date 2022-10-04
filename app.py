@@ -1,9 +1,15 @@
 from flask import Flask,render_template
+import os
+
 app = Flask(__name__)
+picFolder = os.path.join('static', 'pics')
+print(picFolder)
+app.config['UPLOAD_FOLDER'] = picFolder
 
 @app.route('/')
 def hello_world():
-   return render_template('index.html')
+   pic1 = os.path.join(app.config['UPLOAD_FOLDER'], 'logo.jpeg')
+   return render_template('index.html',user_image=pic1)
 
 if __name__ == "__main__":
    app.run()
