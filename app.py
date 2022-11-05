@@ -13,10 +13,10 @@ def hello_world():
 @app.route('/sitemap.xml')
 def sitemap():
    sitemap_xml = render_template('sitemap.xml')
-   #response = make_response(sitemap_xml)
-   #response.headers['Content-Type'] = 'application/xml'
-   #return response
-   return sitemap_xml
+   response = make_response(sitemap_xml)
+   response.headers['Content-Type'] = 'application/xml'
+   return response
+   
 
 if __name__ == "__main__":
    app.run()
