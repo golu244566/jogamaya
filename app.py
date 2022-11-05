@@ -10,11 +10,7 @@ app.config['UPLOAD_FOLDER'] = picFolder
 def hello_world():
    pic1 = os.path.join(app.config['UPLOAD_FOLDER'], 'logo.jpeg')
    return render_template('index.html',user_image=pic1)
-@app.route('/sitemap.xml')
-   sitemap_xml=render_template(url_for('sitemap'))
-   response = make_response(sitemap_xml)
-   response.headers["Content-Type"]="application/xml"
-   return response
+#@app.route('/sitemap.xml')
 
 if __name__ == "__main__":
    app.run()
