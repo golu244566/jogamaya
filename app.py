@@ -12,7 +12,7 @@ def hello_world():
    return render_template('index.html',user_image=pic1)
 @app.route('/sitemap.xml')
 def sitemap():
-   sitemap_xml = render_template('sitemap.xml')
+   sitemap_xml = render_template('index.html')
    response = make_response(sitemap_xml)
    #response.headers['Content-Type'] = 'application/xml'
    return response
