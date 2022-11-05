@@ -11,6 +11,7 @@ def hello_world():
    pic1 = os.path.join(app.config['UPLOAD_FOLDER'], 'logo.jpeg')
    return render_template('index.html',user_image=pic1)
 @app.route('/sitemap.xml')
+def sitemap():
    return 'Hello, World!'
 
 if __name__ == "__main__":
