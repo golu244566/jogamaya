@@ -18,7 +18,6 @@ def sitemap():
    return response
 @app.route('/costumer')
 def costumer():
-   pic1 = os.path.join(app.config['UPLOAD_FOLDER'], 'logo.jpeg')
    return render_template('costumer.html')
 
    
