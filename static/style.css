@@ -1,48 +1,52 @@
-*{
-    box-sizing: border-box;
+body {
+  margin: 0;
+  padding: 0;
 }
-body, html{
-    height: 100%;
-    margin: 0;
+
+.logo {
+  float: left;
 }
-.bg-image{
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* ~~ Top Navigation Bar ~~ */
+
+#navigation-container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 70px;
 }
-.img1{
-    background-image: url('bg5.png');
+
+.navigation-bar {
+  background-color: #352d2f;
+  height: 70px;
+  width: 100%;
 }
-.img2{
-    background-image: url('bg2.jpeg');
+
+.navigation-bar ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  float: left;
+  background: white;
 }
-.img3{
-    background-image: url('bg3.jpeg');
+
+.navigation-bar li {
+  list-style-type: none;
+  padding: 0px;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline;
 }
-.img4{
-    background-image: url('bg4.jpeg');
+
+.navigation-bar li a {
+  color: black;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 70px;
+  padding: 5px 15px;
+  opacity: 0.7;
 }
-.img5{
-    background-image: url('bg.png');
-}
-.img6{
-    background-image: url('image/bg6.jpg');
-}
-.bg-text{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    font-weight: bold;
-    font-size: 80px;
-    border: 10px solid #f1f1f1;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    padding: 20px;
-    text-align: center;
-    white-space: nowrap;
+
+#menu {
+  float: right;
 }
