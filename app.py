@@ -16,7 +16,7 @@ def sitemap():
    response = make_response(sitemap_xml)
    response.headers['Content-Type'] = 'application/xml'
    return response
-@app.route('/costumer')
+@app.route('/costumers')
 def costumer():
    return render_template('costumer.html')
 
